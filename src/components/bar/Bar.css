@@ -6,5 +6,10 @@
   color: white;
 }
 
-.navbar-text {
+.navbar {
+  background-color: black;
+}
+
+.navbar {
+  height: 150px;
 }
