@@ -12,13 +12,11 @@ const App = () => {
   return (
     <Router>
       <Bar />
-      <Container fluid={true}>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/cv" component={Cv} />
-          <Route path="/nasa" component={Nasa} />
-        </Switch>
-      </Container>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/cv" component={Cv} />
+        <Route path="/nasa" component={Nasa} />
+      </Switch>
     </Router>
   );
 };
