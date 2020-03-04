@@ -1,7 +1,8 @@
 import React from "react";
+import "./Nasa.css";
 
 const Nasa = () => {
-  return <div>mon site sur la nasa</div>;
+  return <div className="nasa">mon site sur la nasa</div>;
 };
 
 export default Nasa;

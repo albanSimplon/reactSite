@@ -5,7 +5,6 @@ import Cv from "./components/cv/Cv";
 import Home from "./components/home/Home";
 import Nasa from "./components/nasa/Nasa";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "react-bootstrap";
 import "./App.css";
 
 const App = () => {

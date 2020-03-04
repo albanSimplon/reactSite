@@ -1,4 +1,11 @@
-.homePage {
-  background: url("../../background.jpg") no-repeat center center fixed;
+/* body {
+  background: url("../../background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+} */
+
+.homePage {
+  color: white;
 }

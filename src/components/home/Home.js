@@ -1,115 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./Home.css";
 
 const Home = () => {
+  useEffect(() => {
+    document.body.style.cssText = `background: url("../../background.jpg") no-repeat center center fixed;background-size: cover`;
+  });
+
   return (
     <Container fluid={true} className="homePage">
       <Row>
-        <Col md={6}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis quam maxime non necessitatibus iure magni animi aperiam
-            vitae, temporibus ipsum, adipisci at dolores? Repellendus quo
-            dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?
-          </p>
-        </Col>
-
-        <Col md={6}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis quam maxime non necessitatibus iure magni animi aperiam
-            vitae, temporibus ipsum, adipisci at dolores? Repellendus quo
-            dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis quam maxime non necessitatibus iure magni animi
-            aperiam vitae, temporibus ipsum, adipisci at dolores? Repellendus
-            quo dolores voluptatem deserunt labore adipisci?Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Perspiciatis quam maxime non
-            necessitatibus iure magni animi aperiam vitae, temporibus ipsum,
-            adipisci at dolores? Repellendus quo dolores voluptatem deserunt
-            labore adipisci?
-          </p>
+        <Col md={12}>
+          <h2 className="text-center">Junior Developer</h2>
         </Col>
       </Row>
     </Container>
