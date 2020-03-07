@@ -4,14 +4,14 @@ import "./Home.css";
 
 const Home = () => {
   useEffect(() => {
-    document.body.style.cssText = `background: url("../../background.jpg") no-repeat center center fixed;background-size: cover`;
-  });
+    document.body.style.cssText = `background: url("background.jpg") no-repeat center center fixed;background-size: cover`;
+  }, []);
 
   return (
     <Container fluid={true} className="homePage">
       <Row>
-        <Col md={12}>
-          <h2 className="text-center">Junior Developer</h2>
+        <Col>
+          <h2 className=" titre text-center">Junior Developer</h2>
         </Col>
       </Row>
     </Container>
