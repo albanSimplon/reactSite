@@ -2,6 +2,24 @@
   color: white;
 }
 
+.titreHome {
+
+  animation-name: transitionTitre;
+  animation-duration: 6s;
+}
+
+@keyframes transitionTitre {
+  from {
+
+    opacity: 0;
+  }
+
+  to {
+
+    opacity: 1;
+  }
+}
+
 /* body {
   background: url("../../background.jpg");
   background-position: center;

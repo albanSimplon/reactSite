@@ -7,7 +7,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Bar = () => {
   return (
-    <Container fluid={true} className="">
+    <Container fluid className="">
       <Row>
         <Col xs={10} className="p-0">
           <Navbar expand="lg">
