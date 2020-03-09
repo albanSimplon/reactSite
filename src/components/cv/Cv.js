@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -8,72 +8,96 @@ import {
   faMapMarkerAlt,
   faCar
 } from "@fortawesome/free-solid-svg-icons";
+import photo from "./alban.jpg";
 import "./Cv.css";
 
 const Cv = () => {
   document.body.style.background = "white";
 
   return (
-    <Container className="mt-5">
+    <Container className="cv mt-5">
       <Row>
         <Col className="left" md={3}>
-          <div className="row">
+          <Image src={photo} alt="Photo Veux Alban" roundedCircle fluid />
+          <Row className="mt-2">
             <FontAwesomeIcon icon={faIdCard} size="2x" className="col" />
             <p className="col">Veux Alban</p>
-          </div>
-          <div className="row">
+          </Row>
+          <Row className="mt-2">
             <FontAwesomeIcon icon={faBirthdayCake} size="2x" className="col" />
             <p className="col">21/07/88</p>
-          </div>
-          <div className="row">
+          </Row>
+          <Row className="mt-2">
             <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" className="col" />
             <p className="col">Mandelieu</p>
-          </div>
-          <div className="row">
+          </Row>
+          <Row className="mt-2">
             <FontAwesomeIcon icon={faCar} size="2x" className="col" />
             <p className="col">Permis B</p>
-          </div>
+          </Row>
 
-          <div className="row">
+          <Row className="mt-2">
             <FontAwesomeIcon icon={faLinkedin} size="2x" className="col" />
             <a className="col" href="https://www.linkedin.com/in/alban-veux/">
               LinkedIn
             </a>
-          </div>
-          <div className="row">
+          </Row>
+          <Row className="mt-2">
             <FontAwesomeIcon icon={faGithub} size="2x" className="col" />
             <a className="col" href="https://github.com/albanSimplon">
               GitHub
             </a>
-          </div>
-          <p className="text-center mt-3 h3">Formations</p>
-          <p className="mt-1 font-weight-bold">
+          </Row>
+          <p className="text-center mt-5 h3">Formations</p>
+          <p className="mt-3 font-weight-bold">
             Développement web et web mobile:
           </p>
           <p>Simplon 2019 certification niveau 5</p>
           <p>
             Opquast certification bonne pratique du web 705/1000 niveau confirmé
           </p>
-          <p className="mt-1 font-weight-bold">TOEIC bridge Anglais:</p>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-valuenow="70.5"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ width: "70.5%" }}
+            ></div>
+          </div>
+          <p className="mt-5 font-weight-bold">TOEIC bridge Anglais:</p>
           <p>Greta 2016 158/180</p>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-valuenow="87.8"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style={{ width: "87.8%" }}
+            ></div>
+          </div>
         </Col>
         <Col className="right" md={8}>
-          <h1 className="text-center">EXPERIENCE PROFESSIONNELLE</h1>
-          <h2 className="text-center">Janvier à aout 2019:</h2>
-          <h4>Formation développement web et web mobile</h4>
+          <p className="text-center h1">EXPERIENCE PROFESSIONNELLE</p>
+          <p className="text-center h2">Janvier à aout 2019</p>
+          <p className="text-center h2">
+            Formation développement web et web mobile:
+          </p>
           <br />
-          <h5>Langage:</h5>
+          <p className="h5">Langage:</p>
           <div className="alignement">
             <p>
               HTML/CSS/Bootstrap
               <br />
-              JavaScript/jQuery
+              JavaScript/jQuery/React
               <br />
-              PHP/MYsql/Laravel/Symfony
+              PHP/MYsql/Laravel/Symfony/Node.js
             </p>
           </div>
 
-          <h5>Stage Mai 2019</h5>
+          <p className="h5">Stage Mai 2019</p>
           <div className="alignement">
             <p>
               Site de E-commerce créé avec Wordpress pour une association
@@ -86,7 +110,7 @@ const Cv = () => {
             </p>
           </div>
 
-          <h5>Projet Crawler Juin 2019</h5>
+          <p className="h5">Projet Crawler Juin 2019</p>
           <div className="alignement">
             <p>
               Le client avait un crawler (Robot d’indexation) qui n’était plus à
@@ -97,7 +121,7 @@ const Cv = () => {
             </p>
           </div>
 
-          <h5>Projet Dietcal:</h5>
+          <p className="h5">Projet Dietcal:</p>
           <div className="alignement">
             <p>
               Ce projet est un site Internet créé grâce au Framework Laravel qui
@@ -114,13 +138,13 @@ const Cv = () => {
             </p>
           </div>
 
-          <h2>2018</h2>
+          <p className="h2">2018</p>
           <p>Serveur en restauration </p>
 
-          <h2>2012 à 2017</h2>
+          <p className="h2">2012 à 2017</p>
           <p>Hôtellerie veilleur de nuit</p>
 
-          <h2>Avant 2012</h2>
+          <p className="h2">Avant 2012</p>
           <p>Vente dans le secteur informatique et jeux vidéo</p>
         </Col>
       </Row>

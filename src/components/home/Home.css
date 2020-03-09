@@ -4,11 +4,11 @@
 
 .titreHome {
 
-  animation-name: transitionTitre;
+  animation-name: titre;
   animation-duration: 6s;
 }
 
-@keyframes transitionTitre {
+@keyframes titre {
   from {
 
     opacity: 0;
