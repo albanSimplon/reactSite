@@ -1,29 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Container } from "react-bootstrap";
 import NasaApiDay from "./NasaApiDay";
 
 import "./Nasa.css";
 
 const Nasa = () => {
-  const [apiDay, setApiDay] = useState([]);
-
-  const GetApiDay = async () => {
-    const resp = await fetch(
-      `https://api.nasa.gov/planetary/apod?api_key=OUJhf1VdULAcPwDuby2GmcafBrHqMwzLiWBn7Hxh`
-    );
-    const data = await resp.json();
-
-    setApiDay(data.date);
-  };
-
-  useEffect(() => {
-    GetApiDay();
-  }, []);
+  document.body.style.cssText = `background: url("backgroundNasa.jpg") no-repeat center center fixed;background-size: cover`;
 
   return (
-    <div>
-      nasa{apiDay}
+    <Container className="nasa">
       <NasaApiDay />
-    </div>
+    </Container>
   );
 };
 

@@ -1,5 +1,12 @@
 .nasa {
-    background-color: red;
+    color: white;
 
+}
 
+.nasaTitreApiDay {
+    font-size: 4vw;
+}
+
+.nasaParaApiDay {
+    font-size: 3vw;
 }
