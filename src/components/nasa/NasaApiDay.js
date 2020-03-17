@@ -17,20 +17,20 @@ const NasaApiDay = () => {
   useEffect(() => {
     GetApiDay();
   }, []);
+  const artist = apiDay.copyright ? <p>Artist: {apiDay.copyright}</p> : null;
 
   return (
     <Row className="mt-5">
       <Col>
-        <Image src={apiDay.hdurl} alt={apiDay.title} fluid rounded />
+        <Image src={apiDay.url} alt={apiDay.title} fluid rounded />
       </Col>
       <Col>
         <p className="text-center nasaTitreApiDay">
           Astronomy Picture of the Day ({apiDay.date})
-          <br />
-          <br />
-          <br />
-          Artist :{apiDay.copyright}
         </p>
+        <p className="text-center  nasaParaApiDay">Titre: {apiDay.title}</p>
+
+        {artist}
       </Col>
       <Col sm={12}>
         <p className="mt-2 nasaParaApiDay ">{apiDay.explanation}</p>

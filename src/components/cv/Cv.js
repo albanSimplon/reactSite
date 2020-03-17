@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -13,6 +13,11 @@ import "./Cv.css";
 
 const Cv = () => {
   document.body.style.background = "white";
+  useEffect(() => {
+    document.querySelector(
+      ".footer"
+    ).style.cssText = `position: relative;bottom: 0;`;
+  });
 
   return (
     <Container className="cv mt-5">

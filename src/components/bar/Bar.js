@@ -20,15 +20,20 @@ const Bar = () => {
               id="basic-navbar-nav"
             >
               <Nav>
-                <Link className="text-decoration-none ml-md-5" to="/">
-                  HOME
-                </Link>
-                <Link className="text-decoration-none ml-md-5" to="/cv">
-                  My CV
-                </Link>
-                <Link className="text-decoration-none ml-md-5" to="/nasa">
-                  N.A.S.A
-                </Link>
+                <Col>
+                  <Link className="text-decoration-none ml-3 ml-md-5" to="/">
+                    HOME
+                  </Link>
+                  <Link className="text-decoration-none ml-3 ml-md-5" to="/cv">
+                    My CV
+                  </Link>
+                  <Link
+                    className="text-decoration-none ml-3 ml-md-5"
+                    to="/nasa"
+                  >
+                    N.A.S.A
+                  </Link>
+                </Col>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

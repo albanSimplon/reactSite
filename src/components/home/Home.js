@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./Home.css";
 
 const Home = () => {
-  document.body.style.cssText = `background: url("backgroundHome.jpg") no-repeat center center fixed;background-size: cover`;
+  document.body.style.cssText = `background: url("backgroundHome.jpg") no-repeat center center fixed;background-size: cover;`;
+  useEffect(() => {
+    document.querySelector(
+      ".footer"
+    ).style.cssText = `position: absolute;bottom: 0;`;
+  });
 
   return (
     <Container className="homePage">
