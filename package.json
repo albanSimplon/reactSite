@@ -38,7 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "postcss-normalize": "^8.0.1"
-  }
+  "devDependencies": {}
 }

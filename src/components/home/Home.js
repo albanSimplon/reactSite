@@ -3,13 +3,9 @@ import { Row, Col, Container } from "react-bootstrap";
 import "./Home.css";
 
 const Home = () => {
-  document.body.style.cssText = `background: url("backgroundHome.jpg") no-repeat center center fixed;background-size: cover;`;
   useEffect(() => {
-    document.querySelector(
-      ".footer"
-    ).style.cssText = `position: absolute;bottom: 0;`;
+    document.body.style.cssText = `background: url("backgroundHome.jpg") no-repeat center fixed;background-size: cover;`;
   });
-
   return (
     <Container className="homePage">
       <Row>

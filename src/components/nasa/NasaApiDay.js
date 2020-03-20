@@ -17,7 +17,9 @@ const NasaApiDay = () => {
   useEffect(() => {
     GetApiDay();
   }, []);
-  const artist = apiDay.copyright ? <p>Artist: {apiDay.copyright}</p> : null;
+  const artist = apiDay.copyright ? (
+    <p className="text-center">Artist: {apiDay.copyright}</p>
+  ) : null;
 
   return (
     <Row className="mt-5">
