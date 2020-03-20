@@ -1,9 +1,5 @@
 .homePage {
   color: white;
-
-}
-
-body:before {
   content: "";
   display: block;
   position: fixed;
@@ -17,10 +13,13 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 
-.titreHome {
 
+
+.titreHome {
+  margin-top: 120px;
   animation-name: titre;
   animation-duration: 6s;
 }

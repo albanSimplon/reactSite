@@ -22,7 +22,7 @@ const NasaApiDay = () => {
   ) : null;
 
   return (
-    <Row className="mt-5">
+    <Row className="apiDay">
       <Col>
         <Image src={apiDay.url} alt={apiDay.title} fluid rounded />
       </Col>

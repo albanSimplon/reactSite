@@ -5,10 +5,10 @@ import NasaApiDay from "./NasaApiDay";
 import "./Nasa.css";
 
 const Nasa = () => {
-  document.body.style.cssText = `background: url("backgroundNasa.jpg") no-repeat center center fixed;background-size: cover`;
+  // document.body.style.cssText = `background: url("backgroundNasa.jpg") no-repeat center center fixed;background-size: cover`;
 
   return (
-    <Container className="nasa">
+    <Container fluid={true} className="nasa">
       <NasaApiDay />
     </Container>
   );
