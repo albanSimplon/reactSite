@@ -5,13 +5,16 @@ const NasaApiDay = () => {
   const [apiDay, setApiDay] = useState([]);
 
   const GetApiDay = async () => {
-    const resp = await fetch(
-      `https://api.nasa.gov/planetary/apod?api_key=OUJhf1VdULAcPwDuby2GmcafBrHqMwzLiWBn7Hxh`
-    );
-    const data = await resp.json();
+    try {
+      const resp = await fetch(
+        `https://api.nasa.gov/planetary/apod?api_key=OUJhf1VdULAcPwDuby2GmcafBrHqMwzLiWBn7Hxh`
+      );
 
-    setApiDay(data);
-    console.log(data);
+      const data = await resp.json();
+      setApiDay(data);
+    } catch (e) {
+      console.log("error:" + e);
+    }
   };
 
   useEffect(() => {

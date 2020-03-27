@@ -56,9 +56,9 @@ const Cv = () => {
           <p>
             Opquast certification bonne pratique du web 705/1000 niveau confirmé
           </p>
-          <div class="progress">
+          <div className="progress">
             <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
+              className="progress-bar progress-bar-striped progress-bar-animated"
               role="progressbar"
               aria-valuenow="70.5"
               aria-valuemin="0"
@@ -68,9 +68,9 @@ const Cv = () => {
           </div>
           <p className="mt-5 font-weight-bold">TOEIC bridge Anglais:</p>
           <p>Greta 2016 158/180</p>
-          <div class="progress">
+          <div className="progress">
             <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
+              className="progress-bar progress-bar-striped progress-bar-animated"
               role="progressbar"
               aria-valuenow="87.8"
               aria-valuemin="0"
