@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import Nasa from "./Nasa";
 
 const NasaApiDay = () => {
   const [apiDay, setApiDay] = useState([]);
@@ -11,37 +12,44 @@ const NasaApiDay = () => {
       );
 
       const data = await resp.json();
+
       setApiDay(data);
     } catch (e) {
-      console.log("error:" + e);
+      console.log(e);
+      var error = document.querySelector(".error");
+      error.textContent =
+        "Error from API N.A.S.A impossible to render this page sorry ...";
     }
   };
-  const artist = apiDay.copyright ? (
-    <p className="text-center">Artist: {apiDay.copyright}</p>
-  ) : null;
 
   useEffect(() => {
     GetApiDay();
   }, []);
 
   return (
-    <Row className="apiDay">
-      <Col>
-        <Image src={apiDay.url} alt={apiDay.title} fluid rounded />
-      </Col>
-      <Col>
-        <p className="text-center nasaTitreApiDay">{apiDay.date}</p>
-        <br />
-        <br />
-        <br />
-        <p className="text-center  nasaParaApiDay">{apiDay.title}</p>
+    <>
+      <Nasa />
+      <Container fluid={true} className="nasa">
+        <Row className="apiDay">
+          <Col>
+            <Image src={apiDay.url} alt={apiDay.title} fluid rounded />
+          </Col>
+          <div className="text-center error"></div>
+          <Col>
+            <p className="text-center nasaTitreApiDay">{apiDay.date}</p>
+            <br />
+            <br />
+            <br />
+            <p className="text-center  nasaParaApiDay">{apiDay.title}</p>
 
-        {artist}
-      </Col>
-      <Col sm={12}>
-        <p className="mt-2 nasaParaApiDay ">{apiDay.explanation}</p>
-      </Col>
-    </Row>
+            <p className="text-center">{apiDay.copyright}</p>
+          </Col>
+          <Col sm={12}>
+            <p className="mt-2 nasaParaApiDay ">{apiDay.explanation}</p>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 };
 
